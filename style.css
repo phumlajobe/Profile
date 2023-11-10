@@ -354,7 +354,7 @@ section{
  /* PROJECT SECTION*/
 
  #projects{
-    display: relative;
+    position: relative;
  }
 
  .color-container {
