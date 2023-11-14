@@ -272,6 +272,11 @@ section{
     margin-top: 2rem;
  }
 
+ .text-container p {
+   margin-bottom: 1rem;
+   align-items: flex-end;
+ }
+
  .about-details-container {
     justify-content: center;
     flex-direction: column;
