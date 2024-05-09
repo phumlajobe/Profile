@@ -3,237 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Phumla Sithole</title>
+    <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Phumla Sithole</div>
+        <div class="logo">Pml.Sithole</div>
         <div>
             <ul class="nav-links">
-                <li> <a href="#about">About</a></li>
-                <li> <a href="#experience">Experince</a></li>
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#portfolio">About</a></li>
                 <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Phumla Sithole</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
-                <li> <a href="#experience" onclick="toggleMenu()">Experince</a></li>
-                <li> <a href="#project" onclick="toggleMenu()">Projects</a></li>
-                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Phumla Sithole profile picture" width="400" 
-            height="280" style="border-radius: 100%;">
+            <img src="./assets/Profile-pic.jpg" alt="Phumla Sithole profile picture" id="profile-pic" >
         </div>
         <div class="section__text">
-            <p class="section__text__p1"> Hello, I'm</p>
-            <h1 class="title"> Phumla Sithole</h1>
-            <p class="section__text__p2"> Software Developer</p>
+            <div class="intro-container">
+                <p class="greeting intro"> Hello there, I am</p>
+            </div>
+            <h1 class="title"> Phumla Sithole <br> Software Developer</h1>
+            <p class="intoduction"> 
+                Welcome to my digital space, where curiosity meets creativity and innovation thrives.
+            </p>
             <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">
-                     Download CV</button>
-                <button class="btn btn-color-2" onclick="location.href='./#contact'">
-                     Contact Info</button>
+                <button class="btn btn-color-1" onclick="window.open('./assets/CV_Phumla_Sithole.pdf')">
+                     Hire Me ➡️ </button>
+                <button class="btn btn-color-2" onclick="redirectToPortfolio()"> <!-- About Me -->
+                     View Portfolio ➡️ </button>
             </div>
             <div id="specials-container">
-                <img src="./assets/linkedin.png" style="border-radius: 100%;" alt="My linkedin profile" 
+                <!-- <img src="./assets/linkedin.png" style="border-radius: 100%;" alt="My linkedin profile" 
                 class="icon" onclick="location.href='https://linkedin.com/in/phumla-sithole'" >
                 <img src="./assets/github.png" alt="My Github profile"
-                class="icon github-icon" onclick="location.href='https://github.com/phumlajobe/CODSOFT'">
+                class="icon github-icon" onclick="location.href='https://github.com/phumlajobe/CODSOFT'"> -->
+                <ul id="contact-links">
+                    <li><a href="https://www.linkedin.com/in/phumla-sithole/" target="_blank">LINKEDIN</a></li>
+                    <li> <a href="https://github.com/phumlajobe" target="_blank">GIT HUB</a> </li>
+                </ul>
             </div>
         </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1"> Get To Know More</p>
-        <h1 class="title"> About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpg" height="250" width="250" alt="Profile picture" 
-                width="400" style="border-radius: 100%;" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>experience</h3>
-                        <p>1+ years <br />Backend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.jpeg" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>N.Dip Electrical Engineering, <br />Systems Development(IT) Diploma </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Aspiring software developer. I've finished my National Diploma in Electrical Engineering, and as my coding
-                        love grew, I found WeThinkCode_. I like sharing knowledge and working in teams. I work hard to progress as a
-                        programmer and I am goal-oriented, independent, adaptable, and open to new ideas.</p>
-                   <p>
-                    Activities and societies: Teamwork, code clinics, code reviews, group projects, 
-                    project presentations and peer to peer learning.
-                    Fundamentals using Python, Object Orientation (Java), Brownfield (Build | Test | Deploy | Run), 
-                    Distributed Systems, web developement(html, css, javaScript),Relational database, 
-                    Group projects (Learn | Share | Adapt ) and QA Testing using c#.
-                   </p> 
-                </div>
+
+    <section id="portfolio">
+        <div id="portfolio-content-containter">
+            <nav class="profile-nav">
+                <ul id="profile-list">
+                    <li> <a  href="#about">ABOUT ME</a></li>
+                    <li> <a href="#skills">SKILLS</a></li>
+                    <li> <a href="#experience">EXPERIENCE</a></li>
+                </ul>
+            </nav>
+            <div id="portfolio-content">
+                
             </div>
         </div>
-        <img src="./assets/arrow.png" height="30" width="30" style="transform: rotate(90deg);" alt="Arrow icon"
-            class="icon_arrow" onclick="location.href='./#experience'" >
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Fontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <P>Intermediate</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <P>Intermediate</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <P>Intermediate</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>Java</h3>
-                                <P>Intermediate</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>C#</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>SQL</h3>
-                                <P>Intermediate</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>Relational databases</h3>
-                                <P>Intermediate</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>API Testing</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>NUnit .NET</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>Gauge Atomation</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>Flask</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experince icon"
-                            class="icon" />
-                            <div>
-                                <h3>Git</h3>
-                                <P>Basic</P>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <div id="portfolio-pic-containter">
+            <img src="assets/Portfolio-pic.jpg" alt="Portfolio Picture"
+            class="portfolio-pic">
         </div>
-        <img src="./assets/arrow.png" height="30" width="30" style="transform: rotate(90deg);" alt="Arrow icon"
-            class="icon_arrow" onclick="location.href='./#projects'" >
     </section>
+    <div id="content">
+        <section id="about">
+            <h1 id="about-title">My Story</h1>
+            <p id="about-story">
+                Inspired by a diverse educational journey, I've cultivated a 
+                unique blend of skills merging Electrical Engineering from 
+                Mangosuthu University of Technology with Information Technology 
+                from WeThinkCode. Driven by a passion for innovation 
+                and problem-solving, I strive to harness technology's potential to 
+                create meaningful solutions and contribute positively to the world.</p>
+            
+            <h1 id="about-title">Objective</h1>
+            <p>Aspiring Software Tester and Data analytics  aim of gaining comprehensive 
+                expertise in data analytics and advancing my career in the field of IT. My 
+                objective is to utilize this opportunity to develop practical skills in data
+                 analysis, enhance my understanding of cutting-edge technologies, and contribute 
+                 effectively to data-driven decision-making processes. Through this programme, I 
+                 aim to establish myself as a proficient data analyst, ready to address complex 
+                 challenges in diverse industries and make a meaningful impact on organizational success.</p>
+
+            
+        </section>
+    
+        <section id="skills">
+            <span class="skill-catargory">Technical Skills: </span>
+            <ul>
+                <li>Proficient in programming languages such as Python, Java, and C#</li>
+                <li>Experience with SQL (MySQL) or NoSQL (MongoDB)</li>
+                <li>Knowledge of HTML, CSS</li>
+                <li>Knowledge of software development frameworks and methodologies.</li>
+                <li>Experience with electrical engineering principles, 
+                    electronics and digital systems.</li>
+                <li>Familiarity with software testing and quality assurance processes.</li>
+                <li>Competence in using tools and technologies related to both fields, such
+                     as IDEs, circuit design software, and version control systems.</li>
+            </ul>
+
+            <span class="skill-catargory">Soft Skills: </span>
+            <ul>
+                <li>Analytical Skills</li>
+                <li>Problem-Solving Skills</li>
+                <li>Communication Skills</li>
+                <li>Teamwork</li>
+                <li>Attention to Detail</li>
+                <li>Curiosity and Learning Agility</li>
+                <li>Adaptability</li>
+                <li>Passion for the field of IT and a strong motivation to pursue a career in 
+                    data analytics and software testing</li>
+            </ul>
+
+        </section>
+    
+        <section id="experience">
+            <h2>Web Developer Intern(Remote) | TECH-AINTERN</h2>
+            <em>Noida, India | 10 March 2024 - 10 April 2024</em>
+            <h3>Projects:</h3>
+            <div id="experience-1">
+                <h3>Personal Website</h3>
+                <ul class="experience-description">
+                <li>
+                    Designed and developed a personal portfolio website from scratch using HTML, 
+                    CSS, and JavaScript.
+                </li>
+                <li>Incorporated interactive elements such as a dynamic navigation menu, 
+                    animated transitions, and a contact form for user engagement.
+                </li>
+                <li>Applied modern web development techniques to optimize site performance 
+                    and accessibility, including lazy loading of images and semantic HTML structure.
+                </li>
+            </ul>
+            </div>
+
+            <h2>Bootcamp Assistant(Volunteer) | WeThinkCode</h2>
+            <em>South Africa, Johannesburg | April 2023 - Augast 2023</em>
+            <h3>Tasks:</h3>
+            <div id="experience-2"></div>
+                <ul class="experience-description">
+                    <li>Enhanced understanding by breaking down the curriculum with Python3 for bootcampers</li>
+                    <li>Provided tailored feedback and support, ensuring the success of participants.</li>
+                    <li>Facilitated collaborative learning through group discussions and a positive atmosphere</li>
+                    <li>Proactively resolved technical issues for a smooth learning experience.</li>
+        </section>
+    </div>
     <section id="projects">
-        <p class="section__text__p1"> Browse My Recent</p>
+        <p class="contact-text"> Browse My Recent</p>
+        <!-- <div class="intro-container">
+            <p class="intro"> Browse My Recent</p>
+        </div> -->
         <h1 class="title">Projects</h1>
-        <!-- add more projects use this container -->
-        <div class="experience-details-container">
-            <div class="about-containers">
+        <div class="projects-details-container">
+            <div class="projects-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
                         <!-- add valid project img -->
                         <img src="./assets/project-1.png" alt="Project Image"
                         class="project-img" height="250" width="250"/>
                     </div>
-                    <!-- h2 btn-container inside -->
-                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h2 class="experience-sub-title project-title">crud-blog</h2>
                     <div class="btn-container">
                         <!-- add valid github repo -->
                         <button class="btn btn-color-1 project-btn" 
@@ -241,7 +174,7 @@
                         Github
                         </button>
                         <!-- add finished project url/ deployed project in demo -->
-                        <button class="btn btn-color-1 project-btn" 
+                        <button class="btn btn-color-2 project-btn" 
                         onclick="location.href='https://enchanting-cow-tie.cyclic.app/'">
                         Live Demo
                         </button>
@@ -254,52 +187,29 @@
                         class="project-img" height="250" width="250"/>
                     </div>
                     <!-- h2 btn-container inside -->
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <h2 class="experience-sub-title project-title">Weather App</h2>
                     <div class="btn-container">
                         <!-- add valid github repo -->
                         <button class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/'">
+                        onclick="location.href='https://github.com/phumlajobe/WeatherApp.git'">
                         Github
                         </button>
                         <!-- add finished project url/ deployed project in demo -->
-                        <button class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <!-- add valid project img -->
-                        <img src="./assets/project-3.png" alt="Pending.."
-                        class="project-img" height="250" width="250"/>
-                    </div>
-                    <!-- h2 btn-container inside -->
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <!-- add valid github repo -->
-                        <button class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Github
-                        </button>
-                        <!-- add finished project url/ deployed project in demo -->
-                        <button class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://chic-pudding-ffb823.netlify.app/'">
                         Live Demo
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" height="30" width="30" style="transform: rotate(90deg);" alt="Arrow icon"
-            class="icon_arrow" onclick="location.href='./#contact'" >
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
+        <p class="contact-text">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email_logo.png" alt="email icon"
+                <img src="./assets/email_logo.jpg" alt="email icon"
                 class="icon contact-icon" />
                 <p><a href="mailto:phumlasj@gmail.com">phumlasj@gmail.com</a></p>
             </div>
@@ -310,20 +220,6 @@
             </div>
         </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#experience">Experince</a></li>
-                    <li> <a href="#project">Projects</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Phumla Sithole</p>
-    </footer>
-    <script src="script.js"></script>
-    
 </body>
+<script src="src/script.js"></script>
 </html>
