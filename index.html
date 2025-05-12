@@ -3,221 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phumla Sithole</title>
-    <link rel="stylesheet" href="src/index.css">
+    <meta name="description" content="Phumla is software developer based in Johannesburg" />
+    <title>Software developer - Phumla Sithole</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="src/index.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a5e683dad4.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Pml.Sithole</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#portfolio">About</a></li>
-                <li> <a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/Profile-pic.jpg" alt="Phumla Sithole profile picture" id="profile-pic" >
-        </div>
-        <div class="section__text">
-            <div class="intro-container">
-                <p class="greeting intro"> Hello there, I am</p>
-            </div>
-            <h1 class="title"> Phumla Sithole <br> Software Developer</h1>
-            <p class="intoduction"> 
-                Welcome to my digital space, where curiosity meets creativity and innovation thrives.
-            </p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/Phumla_Sithole_Resume.pdf')">
-                     Hire Me ➡️ </button>
-                <button class="btn btn-color-2" onclick="redirectToPortfolio()"> <!-- About Me -->
-                     View Portfolio ➡️ </button>
-            </div>
-            <div id="specials-container">
-                <!-- <img src="./assets/linkedin.png" style="border-radius: 100%;" alt="My linkedin profile" 
-                class="icon" onclick="location.href='https://linkedin.com/in/phumla-sithole'" >
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon github-icon" onclick="location.href='https://github.com/phumlajobe/CODSOFT'"> -->
-                <ul id="contact-links">
-                    <li><a href="https://www.linkedin.com/in/phumla-sithole/" target="_blank">LINKEDIN</a></li>
-                    <li> <a href="https://github.com/phumlajobe" target="_blank">GIT HUB</a> </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div id="portfolio-content-containter">
-            <nav class="profile-nav">
-                <ul id="profile-list">
-                    <li> <a  href="#about">ABOUT ME</a></li>
-                    <li> <a href="#skills">SKILLS</a></li>
-                    <li> <a href="#experience">EXPERIENCE</a></li>
-                </ul>
-            </nav>
-            <div id="portfolio-content">
-                
-            </div>
-        </div>
-        <!--<div id="portfolio-pic-containter">
-            <img src="assets/Portfolio-pic.jpg" alt="Portfolio Picture"
-            class="portfolio-pic">
-        </div>-->
-    </section>
-    <div id="content">
-        <section id="about-section">
-            <div id="about">
-                <div id="about-content">
-                  
-                        I am a passionate and results-driven Software Developer with a strong foundation in software engineering, data analysis,
-                        and systems design. With expertise in C#, SQL, JavaScript, and web development, I specialize in creating efficient,
-                        scalable, and innovative digital solutions. My background in Electrical Engineering and IT has equipped me with analytical 
-                        problem-solving skills and a keen eye for optimizing workflows. I thrive in collaborative environments, leveraging technology 
-                        to drive meaningful change. Currently pursuing an Advanced Diploma in Information Resource Management, I am committed to 
-                        continuous learning and staying ahead in the ever-evolving tech landscape.
-                   
-                </div>
-                <div id="about-pic">
-                    <img src="assets/Portfolio-pic.jpg" alt="Portfolio Picture"
-                         class="about-pic">
-                </div>
-            </div>
-
-        </section>
-    
-        <section id="skills">
-            <span class="skill-catargory">Technical Skills: </span>
+    <div class="container1">
+        <nav class="d-flex">
+            <a href="index.html">
+                <img src="assets/logo.png" class="logo d-none d-md-block" alt="Phumla logo" />
+                <img src="assets/mini-logo.png" class="logo mt-2 d-block d-md-none" alt="Phumla logo" />
+            </a>
             <ul>
-                <li>Proficient in programming languages such as Python, Java, and C#</li>
-                <li>Experience with SQL (MySQL) or NoSQL (MongoDB)</li>
-                <li>Knowledge of HTML, CSS</li>
-                <li>Knowledge of software development frameworks and methodologies.</li>
-                <li>Experience with electrical engineering principles, 
-                    electronics and digital systems.</li>
-                <li>Familiarity with software testing and quality assurance processes.</li>
-                <li>Competence in using tools and technologies related to both fields, such
-                     as IDEs, circuit design software, and version control systems.</li>
-            </ul>
-
-            <span class="skill-catargory">Soft Skills: </span>
-            <ul>
-                <li>Analytical Skills</li>
-                <li>Problem-Solving Skills</li>
-                <li>Communication Skills</li>
-                <li>Teamwork</li>
-                <li>Attention to Detail</li>
-                <li>Curiosity and Learning Agility</li>
-                <li>Adaptability</li>
-                <li>Passion for the field of IT and a strong motivation to pursue a career in 
-                    data analytics and software testing</li>
-            </ul>
-
-        </section>
-    
-        <section id="experience">
-            <h2>Web Developer Intern(Remote) | TECH-AINTERN</h2>
-            <em>Noida, India | 10 March 2024 - 10 April 2024</em>
-            <h3>Projects:</h3>
-            <div id="experience-1">
-                <h3>Personal Website</h3>
-                <ul class="experience-description">
+                <li class="active">
+                    <a href="index.html" title="Homepage">Home</a>
+                </li>
                 <li>
-                    Designed and developed a personal portfolio website from scratch using HTML, 
-                    CSS, and JavaScript.
+                    <a href="about.html" title="About Phumla">About</a>
                 </li>
-                <li>Incorporated interactive elements such as a dynamic navigation menu, 
-                    animated transitions, and a contact form for user engagement.
+                <li>
+                    <a href="work.html" title="Phumla's work">Work</a>
                 </li>
-                <li>Applied modern web development techniques to optimize site performance 
-                    and accessibility, including lazy loading of images and semantic HTML structure.
+                <li>
+                    <a href="contact.html" title="Contact Phumla">Contact</a>
                 </li>
             </ul>
-            </div>
-
-            <h2>Bootcamp Assistant(Volunteer) | WeThinkCode</h2>
-            <em>South Africa, Johannesburg | April 2023 - Augast 2023</em>
-            <h3>Tasks:</h3>
-            <div id="experience-2"></div>
-                <ul class="experience-description">
-                    <li>Enhanced understanding by breaking down the curriculum with Python3 for bootcampers</li>
-                    <li>Provided tailored feedback and support, ensuring the success of participants.</li>
-                    <li>Facilitated collaborative learning through group discussions and a positive atmosphere</li>
-                    <li>Proactively resolved technical issues for a smooth learning experience.</li>
-        </section>
+        </nav>
     </div>
-    <section id="projects">
-        <p class="contact-text"> Browse My Recent</p>
-        <!-- <div class="intro-container">
-            <p class="intro"> Browse My Recent</p>
-        </div> -->
-        <h1 class="title">Projects</h1>
-        <div class="projects-details-container">
-            <div class="projects-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <!-- add valid project img -->
-                        <img src="./assets/project-1.png" alt="Project Image"
-                        class="project-img" height="250" width="250"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">crud-blog</h2>
-                    <div class="btn-container">
-                        <!-- add valid github repo -->
-                        <button class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/phumlajobe/crud-blog.git'">
-                        Github
-                        </button>
-                        <!-- add finished project url/ deployed project in demo -->
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://crud-blog-au0d.onrender.com/'">
-                        Live Demo
-                        </button>
-                    </div>
+
+    <div class="content-container container">
+        <div class="row content">
+            <div class="col-md-6">
+                <img src="./assets/Profile-pic.jpg" class="img-fluid rounded d-none d-md-grid" alt="Phumla Sithole profile picture">
+            </div>
+            <div class="col-md-6 p-30">
+                <div class="intro-container mt-5">
+                    <p class="greeting intro"> Hello there, I am</p>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <!-- add valid project img -->
-                        <img src="./assets/project-2.png" alt="Project in progress"
-                        class="project-img" height="250" width="250"/>
-                    </div>
-                    <!-- h2 btn-container inside -->
-                    <h2 class="experience-sub-title project-title">Weather App</h2>
-                    <div class="btn-container">
-                        <!-- add valid github repo -->
-                        <button class="btn btn-color-1 project-btn" 
-                        onclick="location.href='https://github.com/phumlajobe/WeatherApp.git'">
-                        Github
-                        </button>
-                        <!-- add finished project url/ deployed project in demo -->
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://chic-pudding-ffb823.netlify.app/'">
-                        Live Demo
-                        </button>
-                    </div>
+                <h1 class="mt-4 h1-large"> Phumla Sithole Software Developer</h1>
+                <h2 class="mt-5">
+                    Welcome to my digital space, where curiosity meets creativity and innovation thrives.
+                </h2>
+                <div class="mt-5">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/Phumla_Sithole_CV.pdf')">
+                        Hire Me ➡️
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="contact">
-        <p class="contact-text">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email_logo.jpg" alt="email icon"
-                class="icon contact-icon" />
-                <p><a href="mailto:phumlasj@gmail.com">phumlasj@gmail.com</a></p>
+    </div>
+
+    <p class="text-center mt-5"> Browse My Recent</p>
+    <h1 class="title m-4 mb-8">Projects</h1>
+    <div class="small-box">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="details-container mt-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/blog.png" alt="Cruid-blog Project Image"
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Cruid-Blog</h5>
+                            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-color-1 project-btn"
+                                        onclick="location.href='https://github.com/phumlajobe/crud-blog.git'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn"
+                                        onclick="location.href='https://crud-blog-au0d.onrender.com/'">
+                                    Live Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon"
-                class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/phumla-sithole">linkedin</a></p>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="details-container mt-2">
+                    <div class="card text-center" style="width: 18rem;">
+                        <!--<img src="..." class="card-img-top" alt="...">-->
+                        <img src="./assets/weather-app.png" alt="Project in progress"
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Weather App</h5>
+                            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-color-1 project-btn"
+                                        onclick="location.href='https://github.com/phumlajobe/WeatherApp.git'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn"
+                                        onclick="location.href='https://chic-pudding-ffb823.netlify.app/'">
+                                    Live Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="details-container mt-2">
+                    <div class="card text-center" style="width: 18rem;">
+                        <!--<img src="..." class="card-img-top" alt="...">-->
+                        <img src="./assets/SAPS.png" alt="Project in progress"
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SAPS App</h5>
+                            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-color-1 project-btn"
+                                        onclick="location.href='https://github.com/phumlajobe/WeatherApp.git'">
+                                    Github
+                                </button>
+                                <button class="btn btn-color-2 project-btn"
+                                        onclick="location.href='https://chic-pudding-ffb823.netlify.app/'">
+                                    Live Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
 </body>
-<script src="src/script.js"></script>
+
 </html>
+<footer>
+    <div class="contact-box d-flex justify-content-between m-8">
+        <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+            <a href="contact.html" class="btn btn-contact btn-branding mt-3" title="Contact Phumla">Contact me</a>
+        </div>
+    </div>
+    <a href="mailto:phumlasj@gmail.com" class="email-link mb-5">
+        phumlasj@gmail.com
+    </a>
+    <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/phumla-sithole/" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <script src="src/script.js"></script>
+</footer>
